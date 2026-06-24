@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sort Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <div class="header">
+    <h1>// sort visualizer</h1>
+    <p>mirá cómo ordenan los algoritmos, paso a paso.</p>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="controls">
+    <div class="control">
+      <label>ALGORITMO</label>
+      <select id="algo-select"></select>
+    </div>
+
+    <div class="control">
+      <label>VELOCIDAD</label>
+      <input id="speed-input" type="range" min="1" max="100" value="65" />
+    </div>
+
+    <div class="control">
+      <label>TAMAÑO</label>
+      <input id="size-input" type="range" min="10" max="150" value="50" />
+    </div>
+
+    <button id="play-btn">play ▶</button>
+    <button id="reset-btn">reset ↺</button>
+    <button id="new-btn">nuevo array ⟳</button>
+  </div>
+
+  <script src="./src/app.js" type="module"></script>
+</body>
+</html>
